@@ -1,3 +1,5 @@
+import sun.awt.AWTAccessor;
+
 import java.util.ArrayList;
 
 public class Bus {
@@ -14,5 +16,13 @@ public class Bus {
 
     public int passengersCount() {
         return this.passengers.size();
+    }
+
+    public void addPassenger(Person personInput) {
+        if (this.passengersCount() < capacity ){
+        this.passengers.add(personInput);
+        } else {
+            System.out.print("Bus Full");
+        }
     }
 }
