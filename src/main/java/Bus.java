@@ -21,8 +21,12 @@ public class Bus {
     public void addPassenger(Person personInput) {
         if (this.passengersCount() < capacity ){
         this.passengers.add(personInput);
-        } else {
-            System.out.print("Bus Full");
-        }
+        };
+    }
+
+
+    public int removePassenger(Person personInput) {
+
+
     }
 }

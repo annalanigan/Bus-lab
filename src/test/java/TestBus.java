@@ -36,5 +36,11 @@ public class TestBus {
         myBus2.addPassenger(person2);
         assertEquals(1, myBus2.passengersCount());
     }
-
+    @Test
+    public void removePassenger() {
+        myBus.addPassenger(person2);
+        myBus.addPassenger(person1);
+        myBus.removePassenger(person1);
+        assertEquals(1, myBus.passengersCount());
+    }
 }
